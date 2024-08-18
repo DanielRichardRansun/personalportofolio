@@ -238,6 +238,11 @@ nav ul li a:hover::after {
   transform: scale(1); /* Skala awal gambar */
 }
 
+/* menghilangkan terlebih dahulu untuk see more */
+.work.hidden {
+  display: none;
+}
+
 .layer {
   width: 100%;
   height: 0;

@@ -163,9 +163,9 @@
             <div class="layer">
               <h3>Responsive Blog App/Website</h3>
               <p>
-                Responsive Blog App/Website, featuring a robust CRUD database
-                and an intuitive, responsive interface for effortless content
-                management and interaction.
+                Responsive Blog App/Website, using PHP language with CRUD
+                database and admin fitur, responsive interface for effortless
+                content management and interaction.
               </p>
               <a href="https://github.com/DanielRichardRansun/myBlogs"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
@@ -177,8 +177,8 @@
             <div class="layer">
               <h3>Juice Shop Website</h3>
               <p>
-                Ransun Juice sales and store introduction website. Designed with
-                a simple and elegant concept.
+                Ransun Juice sales and store introduction website using HTML,
+                CSS, and JavaScript. Designed with a simple and elegant concept.
               </p>
               <a href="https://danielrichardransun.github.io/ransunjuice/"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
@@ -193,8 +193,8 @@
                 (Input Mahasiswa)
               </h3>
               <p>
-                CRUD Website using Laravel with bootstrap css, for input student
-                collage data with search fitur and table pageing in it.
+                CRUD Website using LARAVEL with BOOSTRAP CSS, for input student
+                collage data with search fitur and table pageing.
               </p>
               <a
                 href="https://github.com/DanielRichardRansun/crud-laravel-project-1"
@@ -202,39 +202,43 @@
               ></a>
             </div>
           </div>
-          <div class="work">
+          <!-- Additional Works Hidden Initially -->
+          <div class="work hidden">
             <img src="images/pengalaman2-2.png" alt="" />
             <div class="layer">
               <h3>Catering Website</h3>
               <p>
-                Ransun Catering store website, designed with complete details
-                and Intuitive User Experience.
+                Ransun Catering store website, developed with WORDPRESS and
+                Elementor Plugin. Complete details Website and Intuitive User
+                Experience.
               </p>
               <a href="https://danielrichardransun.github.io/ransuncatering/"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work hidden">
             <img src="images/pengalaman3-1.png" alt="" />
             <div class="layer">
               <h3>News Phone Application</h3>
               <p>
-                News Phone Application, designed with a dynamic layout and
-                user-friendly navigation to make a reading experience.
+                Project News Phone Application using KOTLIN+JAVA in Android
+                Studio, designed with a dynamic layout and user-friendly
+                navigation to make a reading experience.
               </p>
               <a href="https://github.com/DanielRichardRansun/UTSANMP160421081"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work hidden">
             <img src="images/pengalaman5.png" alt="" />
             <div class="layer">
               <h3>Portofolio App/Website</h3>
               <p>
-                Portfolio website, crafted with a Stylish design, highlighting
-                creativity and professionalism user experience.
+                Portfolio website created with HTML, CSS, and JavaScript, with a
+                Stylish design, creative fiturs and professionalism user
+                experience.
               </p>
               <a href=""
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
@@ -242,7 +246,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#" class="btn" id="see-more-btn">See more</a>
       </div>
     </div>
 
@@ -328,6 +332,7 @@
       }
     </script>
 
+    <!-- Side menu untuk tampilan tablt dan handphone -->
     <script>
       var sidemeu = document.getElementById("sidemenu");
 
@@ -339,6 +344,7 @@
       }
     </script>
 
+    <!-- Memasukan data pada contact ke google sheet secara otomatis -->
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbyraj3f5FlgkWUki0V-C9eGgyGoMLCrp6veTsGsz6p8tYerZpbRsxAzk992GDE9LK6h/exec";
@@ -359,10 +365,28 @@
       });
     </script>
 
+    <!-- Kalau ada project yang progress -->
     <script>
       function showProgress() {
         alert("On progress (40% progress)");
       }
+    </script>
+
+    <!-- See More button di protofolio-->
+    <script>
+      document
+        .getElementById("see-more-btn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const hiddenWorks = document.querySelectorAll(".work.hidden");
+
+          hiddenWorks.forEach(function (work) {
+            work.classList.remove("hidden");
+          });
+
+          // Optional: Hide the 'See more' button after clicking
+          this.style.display = "none";
+        });
     </script>
   </body>
 </html>
