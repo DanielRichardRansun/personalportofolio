@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portofolio - Daniel Richard Ransun</title>
+    <title>Personal Portfolio - Daniel Richard Ransun</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/973b7772ef.js"
@@ -11,27 +11,66 @@
     ></script>
   </head>
   <body>
-    <!-- Header Seciton -->
+    <!-- Header Section -->
     <div id="header">
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo" />
           <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#portofolio">Portofolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#header"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+            </li>
+            <li>
+              <a href="#services"
+                ><i class="fa-solid fa-briefcase"></i> Service</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio"
+                ><i class="fa-solid fa-image"></i> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-envelope"></i> Contact</a
+              >
+            </li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Hello There!</p>
-          <h1>
-            I'm Daniel <span>Richard</span> Ransun. <br />
-            a Full-Stack Programmer.
-          </h1>
+          <h1>I'm Daniel <span>Richard</span> Ransun <br /></h1>
+          <h2>a Website & Media Technology Specialist</h2>
+          <div
+            class="cta-buttons"
+            style="
+              display: flex;
+              justify-content: space-between;
+              max-width: 450px;
+              gap: 15px;
+            "
+          >
+            <a
+              href="https://www.canva.com/design/DAGbtAzcaMU/7bcseCRE2UnZktb7_urkoQ/view?utm_content=DAGbtAzcaMU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf99a45e652#1"
+              download
+              class="btn btn-primary"
+              style="flex: 1; text-align: center"
+            >
+              <i class="fa-solid fa-file"></i> Curriculum Vitae
+            </a>
+            <a
+              href="#contact"
+              class="btn btn2"
+              style="flex: 1; text-align: center"
+            >
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -45,13 +84,18 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              I’m a student at Surabaya University (UBAYA), majoring in
-              Informatics Engineering, class of 2021. As a dedicated full-stack
-              developer, I bring a strong foundation in HTML, CSS, JavaScript,
-              PHP, C#, and Python, along with good experience in frameworks like
-              Laravel, React, Native Programming, Ionic and Flutter. I thrive in
-              collaborative environments, enjoy learning new technologies, and
-              quickly adapt to new challenges.
+              I am a student at Surabaya University (UBAYA), majoring in
+              Informatics Engineering. I'm a Website Developer with experience
+              in PHP, HTML, CSS, JavaScript and various frameworks such as
+              Laravel, Native, Ionic, and Flutter. I am also expert in Content
+              Management System (CMS) platforms, including WordPress and Wix
+              Studio. I also have extensive experience in developing social
+              media content for Instagram, Facebook, YouTube, etc. <br />I have
+              great skills in designing and creating image or video content
+              using several tools such as Canva, Photoshop, Filmora, Davinci,
+              Capcut, etc. <br />I have the ability to work and communicate
+              effectively in a team, and I enjoy learning new things and
+              adapting to different situations.
             </p>
 
             <div class="tab-title">
@@ -66,39 +110,57 @@
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
-                  <span>Web Development</span><br />Create a website with HTML,
-                  CSS, Javascript, PHP, etc. Accompanied by a lot of experience
-                  in frameworks like Laravel and React.
+                  <span>Web Development</span><br />Develops and maintains
+                  websites using PHP, HTML, CSS,and JavaScript, with expertise
+                  in frameworks like Laravel and React. Implements UI/UX best
+                  practices using Figma and Miro to create intuitive and
+                  responsive digital experiences.
                 </li>
 
                 <li>
-                  <span>App Development</span><br />Build android apps using
-                  Android Studio with kotlin+java language (native programming),
-                  and learn basic framework Ionic, Flutter.
+                  <span>App Development</span><br />Builds Android applications
+                  using Android Studio with Kotlin and Java for native
+                  development. Has experience with cross-platform frameworks
+                  like Ionic and Flutter to enhance functionality and
+                  accessibility.
                 </li>
                 <li>
-                  <span>UI/UX</span><br />Designing websites/applications with
-                  attractive UI/UX using figma and miro accompanied by Canva
-                  skills.
+                  <span>Digital Media & Social Engagement</span><br />Manages
+                  and develops digital media content for social platforms such
+                  as Instagram, Facebook, and YouTube. Skilled in creating
+                  visuals and videos using tools like Canva, Photoshop, Filmora,
+                  Davinci, and CapCut to strengthen audience engagement and
+                  brand communication.
                 </li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>Create Websites & Applications</span><br />Developing
-                  Blog, Juice Shop, CRUD Daily-Task and Input-Mahasiswa, Kampus
-                  Introduction, Portofolio, Catering,& News Phone
-                  Website/Application.
+                  <span>Web & Application Development</span><br />Developed and
+                  maintained various websites and applications using Laravel,
+                  WordPress, Wix Studio, and other web technologies. Built
+                  responsive and user-friendly platforms for competitions,
+                  businesses, and personal projects, ensuring optimal
+                  performance and accessibility. Experienced in UI/UX design
+                  using Figma and Miro to enhance usability.
                 </li>
                 <li>
-                  <span>UBAYA Leauge Committee</span><br />As an event committee
-                  I learned to design, organize, and run the entire series of
-                  events.
+                  <span>Media & Technology Specialist</span><br />Managed
+                  company and client websites, optimized digital tools, and
+                  created engaging multimedia content, including graphics,
+                  videos, and presentations. Played a key role in organizing
+                  online and offline events, ensuring smooth technical execution
+                  and enhancing audience engagement through social media
+                  management.
                 </li>
                 <li>
-                  <span>30th Industrial Games Committee</span><br />I learned
-                  Risk Management Skills and Problem Solving in this Committee.
+                  <span>Technical & Multimedia Support</span><br />Handled live
+                  streaming, digital presentations, and technical support for
+                  worship services and corporate events. Designed and produced
+                  high-quality visual and video content to enhance communication
+                  and audience interaction, ensuring a seamless digital
+                  experience.
                 </li>
               </ul>
             </div>
@@ -127,11 +189,24 @@
             <i class="fa-solid fa-code"></i>
             <h2>Web Development</h2>
             <p>
-              Experienced in creating various types of websites such as blogs,
-              CRUD Daily-Task,campus introcution, portfolio, catering , and shop
-              websites with a creative and responsive appearance using HTML,
-              CSS, Javascript, PHP, etc coupled with laravel and react framework
-              skills.
+              I develop dynamic and responsive websites using Laravel,
+              WordPress, and Wix Studio. My experience includes building
+              e-commerce platforms, competition websites, and portfolio sites
+              with a focus on functionality and user experience. I ensure
+              seamless integration between frontend and backend while optimizing
+              performance and SEO.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-photo-video"></i>
+            <h2>Media & Technology Specialist</h2>
+            <p>
+              I manage and maintain company and client websites to enhance
+              performance and security. I create and oversee social media
+              content to boost engagement and branding. Additionally, I produce
+              multimedia content, including graphics and videos, to support
+              marketing and promotional efforts.
             </p>
             <!-- <a href="#">Learn more</a> -->
           </div>
@@ -139,20 +214,11 @@
             <i class="fa-brands fa-app-store"></i>
             <h2>App Development</h2>
             <p>
-              Developing mobile applications across various platforms, including
-              iOS and Android. I create apps that are not only functional but
-              also user-centric, utilizing technologies such as Flutter, Ionic,
-              and native programming languages.
-            </p>
-            <!-- <a href="#">Learn more</a> -->
-          </div>
-          <div>
-            <i class="fa-solid fa-crop-simple"></i>
-            <h2>UI/UX Interface Design</h2>
-            <p>
-              Skilled in designing user-friendly and visually interfaces,
-              including websites and mobile applications. With a focus on user
-              experience, I create the designs using tools like Figma and Miro.
+              I develop mobile and web applications using Laravel, Flutter, and
+              Android Studio. My focus is on building scalable and
+              high-performance apps with intuitive user interfaces. I ensure
+              smooth API integration and efficient database management for
+              seamless user experiences.
             </p>
             <!-- <a href="#">Learn more</a> -->
           </div>
@@ -166,6 +232,80 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
           <div class="work">
+            <img src="images/Yescamp.png" alt="" />
+            <div class="layer">
+              <h3>YesCamp | Company Profile</h3>
+              <p>
+                YesCamp Company Profile Website owned by Crabiz Factory from
+                South Korea. Which is used to introduce the program from
+                YesCamp, this website is made using Wordpress & Elementor
+                Plugins
+              </p>
+              <a href="https://yescamp.info/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/KryaGlobal.png" alt="" />
+            <div class="layer">
+              <h3>Krya Global | Company Profile</h3>
+              <p>
+                Krya Global Website owned by PT Muda Karya Kriya. Which is used
+                to introduce the company from Krya Global, this website is made
+                using Wordpress & Elementor Plugins
+              </p>
+              <a href="https://krya.global/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/ICIAGlobal.png" alt="" />
+            <div class="layer">
+              <h3>ICIA Global | Company Profile</h3>
+              <p>
+                ICIA Global is one of the websites owned by PT Muda Karya Kriya.
+                Which is used to introduce a subsidiary of Krya Global, namely
+                ICIA Global, this website is made using Wordpress & Elementor
+                Plugins
+              </p>
+              <a href="https://www.icia.global/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Tambahan yang dihilangkan saat awal -->
+          <div class="work hidden">
+            <img src="images/HoopTourney.png" alt="" />
+            <div class="layer">
+              <h3>HoopTouney</h3>
+              <p>
+                Hoop Tourney is a website created using Laravel (PHP) and
+                Bootstrap CSS. This website is used as a basketball tournament
+                management website.
+              </p>
+              <a href="https://github.com/DanielRichardRansun/HoopTourney.git"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden">
+            <img src="images/ICIAJudging.png" alt="" />
+            <div class="layer">
+              <h3>ICIA Admin & Judging</h3>
+              <p>
+                ICIA Admin & Judging is a website created using Laravel (PHP)
+                and Bootstrap CSS, this website is used by PT Muda Karya Kriya
+                for Administration and Management related to the ICIA
+                Competition and Judging Website.
+              </p>
+              <a href="https://icia-judgingform.krya.global/login"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden">
             <img src="images/pengalaman4-1.png" alt="" />
             <div class="layer">
               <h3>Responsive Blog App/Website</h3>
@@ -179,7 +319,7 @@
               ></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work hidden">
             <img src="images/pengalaman1.png" alt="" />
             <div class="layer">
               <h3>Juice Shop Website</h3>
@@ -192,7 +332,7 @@
               ></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work hidden">
             <img src="images/pengalaman6.png" alt="" />
             <div class="layer">
               <h3>
@@ -209,7 +349,6 @@
               ></a>
             </div>
           </div>
-          <!-- Tambahan yang dihilangkan saat awal -->
           <div class="work hidden">
             <img src="images/pengalaman7.png" alt="" />
             <div class="layer">
@@ -317,11 +456,13 @@
               ></a>
             </div>
             <a
-              href="images/CV-Daniel-Richard-Ransun.pdf"
+              href="https://www.canva.com/design/DAGbtAzcaMU/7bcseCRE2UnZktb7_urkoQ/view?utm_content=DAGbtAzcaMU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf99a45e652#1"
               download
               class="btn btn2"
-              >Download CV</a
+              style="flex: 1; text-align: center"
             >
+              <i class="fa-solid fa-file"></i> Curriculum Vitae
+            </a>
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
